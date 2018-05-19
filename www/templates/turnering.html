@@ -1,5 +1,24 @@
 <ion-view view-title="Browse">
   <ion-content>
-    <h1>Browse</h1>
+    <ul id="app"></div>
+
+  <script>
+  jQuery(document).ready(function($) {
+    $.get( "http://nyside.julecup.dk/wp-json/wp/v2/posts", function( data ) {
+        $.each( data, function( i, val ) {
+            $( "#app" ).append(
+                '<li>' + 
+                    '<h3>' +
+                    val.title.rendered + 
+                    '</h3>' +
+                    '<p>' +
+                    val.excerpt.rendered +
+                    '</p>' +
+                '</li>'
+            );
+        });
+    });
+  });
+  </script>
   </ion-content>
 </ion-view>
