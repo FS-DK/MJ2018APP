@@ -1,15 +1,15 @@
 <ion-view view-title="Indlæg">
   <ion-content>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $.getJSON("http://nyside.julecup.dk/wp-json/wp/v2/post", function(result) {
                 $.each(result, function(i, field) {
-                    $("#output").append("" + field.title.rendered + "" + field.content.rendered + "<br/>");
+                    $("#output").append("" + field.title.rendered + "<br />" + field.content.rendered + "<br/>");
                 });
             });
         });
-    </script>
+    </script> 
 	
     <div id="output"></div>
 	</ion-content>
