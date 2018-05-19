@@ -72,7 +72,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
+.state('app.turnering', {
+      url: '/turnering',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/turnering.html'
+        }
+      }
+    })
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -83,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/bus');
+  $urlRouterProvider.otherwise('/app/kontakt');
 });
 // Add to index.js or the first page that loads with your app.
 // For Intel XDK and please add this to your app.js.
