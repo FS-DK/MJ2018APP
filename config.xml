@@ -10,6 +10,7 @@
   <content src="index.html"/>
 <icon src="icon.png" />
   <access origin="*"/>
+  <access origin="https://nyside.julecup.dk" subdomains="true" />
   <access origin="http://code.jquery.com" subdomains="true" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
