@@ -13,6 +13,8 @@
   <access origin="https://nyside.julecup.dk" subdomains="true" />
   <access origin="http://code.jquery.com" subdomains="true" />
   <allow-intent href="*" />
+  <allow-navigation href="*" />
+  <access origin="content:///*" />
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-network-information" source="npm" />
 	<plugin name="cordova-plugin-whitelist" source="npm" />
