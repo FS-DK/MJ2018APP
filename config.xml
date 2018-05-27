@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.myappmenu133359" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.myappmenu133359" version="0.0.1" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Midtjysk Julecup 2018</name>
   <description>
         Deltager App 2018
@@ -14,6 +14,7 @@
   <access origin="http://code.jquery.com" subdomains="true" />
   <allow-intent href="*" />
   <allow-navigation href="*" />
+
   <access origin="content:///*" />
   <plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-network-information" source="npm" />
