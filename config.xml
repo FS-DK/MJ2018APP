@@ -35,7 +35,5 @@
   <!-- Can omit if not targetting Windows Phone -->
   <preference name="windows-appx-target" value="8.1-phone" />
   <preference name="WindowsToastCapable" value="true" />
-  <feature name="StatusBar">
-    <param name="ios-package" value="CDVStatusBar" onload="true"/>
-	  <feature name="http://api.phonegap.com/1.0/device" />
+   <feature name="http://api.phonegap.com/1.0/device" />
 </widget>
