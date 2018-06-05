@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "https://nyside.julecup.dk/wp-json/wp/v2/page?slug=turnering",
+                crossDomain: true,
+                cache: false,
+                success: function(result) {
+                    var result = $.parseJSON(result);
+                    $.each(result, function(i, field) {
+                        $("#output").append("<div>"+ field.title.rendered + "<br /> " + field.content.rendered + "</div>");
+                    });
+                }
+            });
+        });
+    </script>
+  <body>
+  <div id="output"></div>
+  </body>
+</html>
