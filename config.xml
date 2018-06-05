@@ -12,14 +12,16 @@
   <access origin="*"/>
    <allow-intent href="*" />
   <allow-navigation href="*" />
-	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-network-information" source="npm" />
 	<!-- <plugin name="cordova-plugin-whitelist" source="npm" /> -->
-	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<plugin name="cordova-plugin-whitelist" spec="1" />
 	<plugin name="cordova-plugin-splashscreen" source="npm" />
 	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
 	<plugin name="cordova-plugin-crosswalk-webview" spec="2.3.0" source="npm" />
+	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
 	<!--<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" /> -->
 	<plugin name="onesignal-cordova-plugin" spec="2.1.1" />
   <preference name="webviewbounce" value="false"/>
@@ -34,4 +36,7 @@
   <!-- Can omit if not targetting Windows Phone -->
   <preference name="windows-appx-target" value="8.1-phone" />
   <preference name="WindowsToastCapable" value="true" />
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
 </widget>
