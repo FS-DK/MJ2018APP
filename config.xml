@@ -20,8 +20,6 @@
 	<plugin name="cordova-plugin-splashscreen" source="npm" />
 	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
-	<plugin name="cordova-plugin-crosswalk-webview" spec="2.3.0" source="npm" />
-	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
 	<!--<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" /> -->
 	<plugin name="onesignal-cordova-plugin" spec="2.1.1" />
   <preference name="webviewbounce" value="false"/>
